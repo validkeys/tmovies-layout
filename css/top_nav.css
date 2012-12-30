@@ -1,0 +1,52 @@
+#top_nav{
+	height: 44px;
+	width: 100%;
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#top_nav ul{
+	padding: 0;
+	list-style-type: none;
+	height: inherit;
+	width: 95%;
+	margin: 0 auto;
+}
+
+	#top_nav ul li{
+		height: inherit;
+		display: table-cell;
+		vertical-align: middle;
+		float: left;
+		/*border: red 1px solid;*/
+	}
+
+		#top_nav ul li#right-most{
+			float: right;
+		}
+
+
+	a#main_menu_trigger{
+		display: block;
+		width: 18px;
+		height: inherit;
+		float: left;
+		background: transparent url(../img/main_menu_off.png) no-repeat center center;
+	}
+		li#left-most h5{
+			display: table-cell;
+			height: inherit;
+			vertical-align: middle;
+			padding: 0 0 0 10px;
+			margin: 0;
+			font-weight: 400;
+		}
+
+	a#six_logo{
+		width: 19px;
+		height: inherit;
+		display: block;
+		background: transparent url(../img/six_logo.png) no-repeat center center;		
+	}

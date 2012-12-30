@@ -1,0 +1,169 @@
+div.lineup_listing_item{
+	height: 200px;
+	background: url(../img/layout-img/frenchstucco.png);
+	overflow: hidden;
+	-moz-box-shadow: 0px 0px 5px #424242;
+	-webkit-box-shadow: 0px 0px 5px #424242;
+	box-shadow: 0px 0px 5px #424242;	
+	margin-bottom: 15px;
+	position: relative;
+}
+
+	a.lli-link{
+		position: absolute;
+		z-index: 10;
+		width: 85%;
+		height: 100%;
+		display: block;
+	}
+
+	div.lli-img-wrapper{
+		height: 100%;
+		width: 35%;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		float: left;
+		padding: 0;
+		margin: 0;
+	}
+
+	div.lli-content-wrapper{
+		height: inherit;
+		width: 65%;
+		float: left;
+		padding: 0;
+		margin: 0;
+	}
+		div.lli-content-inner{
+			height: inherit;
+			width: 85%;
+			margin: 0 auto;
+		}
+			div.lli-ct-inner{
+				height: 80%;
+				/*background: yellow;*/
+				padding: 5px 0 0 0;
+			}		
+				div.lli-content-top{
+					/*background: blue;*/
+					height: 30%;
+					width: 100%;
+				}
+
+					div.author{
+						/*background: red;*/
+						width: 70%;
+						float: left;
+						height: 100%;
+						color: #8e8e8e;
+					}
+
+						div.author div.author-img{
+							/*background: #fff;*/
+							width: 10%;
+							height: 65%;
+							margin-top: 10px;
+							background-repeat: no-repeat;
+							background-position: center center;
+							background-size: cover;
+							float: left;
+							border:solid 0px #000000;
+							-moz-border-radius: 5px;
+							-webkit-border-radius: 5px;
+							border-radius: 5px;							
+						}
+					div.author div.author-name{
+						/*background: orange;*/
+						font-size: 15px;
+						line-height: 14px;
+						padding: 12px 0 7px 14px;
+						float: left;
+						width: auto;
+					}
+						div.author div.author-name span{
+							display: block;
+						}
+
+						div.author div.author-name small{
+							font-size: 10px;
+						}
+					div.lli-icons{
+						/*background: brown;*/
+						float: right;
+						width: 25%;
+						padding: 12px 0;
+					}
+						div.lli-icons a.lli-icon{
+							display: table-cell;
+							width: 20px;
+							height: 20px;
+							vertical-align: middle;
+							float: right;
+						}
+						div.lli-icons a.lli-icon.fav-icon{
+							width: 23px;
+							height: 21px;
+						}
+							div.lli-icons a.lli-icon:nth-child(1){
+								padding-right: 20px;
+							}
+							div.lli-icons a.seen-icon.off{
+								background: url(../img/seen-off.png) no-repeat center center;
+							}
+
+							div.lli-icons a.seen-icon.off:hover, div.lli-icons a.seen-icon.on{
+								background: url(../img/seen-on.png) no-repeat center center;	
+							}
+							div.lli-icons a.fav-icon.off{
+								background: url(../img/fav-off.png) no-repeat center center;
+							}
+
+							div.lli-icons a.fav-icon.off:hover, div.lli-icons a.seen-icon.on{
+								background: url(../img/fav-on.png) no-repeat center center;	
+							}
+
+			div.lli-content-bottom{
+				border-top: solid 1px #e1e1e1;
+				height: 70%;
+				width: 100%;
+			}			
+
+				div.lli-content-bottom h3{
+					margin: 14px 0 0 0;
+					padding: 0;
+				}
+
+				div.lli-content-bottom p{
+					margin: 5px 0 0 0;
+					font-size: 14px;
+					line-height: 19px;
+					text-overflow: ellipsis;
+					max-height: 50%;
+					overflow: hidden;
+					white-space: pre-wrap;
+				}
+
+				div.lli-cb-footer{
+					/*background: violet;*/
+					text-align: right;
+					font-size: 12px;
+					color: #8e8e8e;
+					padding: 12px 0 0 0;
+				}
+					div.lli-cb-footer span{
+						display: inline-block;
+						width: 13px;
+						height: 10px;
+					}
+
+						div.lli-cb-footer span.small-seen-icon{
+							background: url(../img/seen-on-small.png) no-repeat center center;
+						}
+
+						div.lli-cb-footer span.small-fav-icon{
+							height: 11px;
+							background-image: url(../img/fav-on-small.png);
+							background-repeat: no-repeat;
+							background-position: bottom bottom;
+						}						
