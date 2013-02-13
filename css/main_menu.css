@@ -4,9 +4,9 @@
 	width: 25%;
 	position: absolute;
 	z-index: 100;
-	background-image: url(../img/menu_6.png);
+	background-image: url(../img/menu_6.png), -webkit-gradient(radial, 165 50%, -27, 220 229, 465, from(#424242), to(#000000));
 	background-repeat: no-repeat;
-	background-position: center 10px;
+	background-position: center 10px;	
 }
 
 #main-menu ul#main-menu-list{
@@ -22,9 +22,9 @@
 	padding: 10px 0px 10px 10px;
 	border-bottom: #4d4d4d 1px solid;
 	position: relative;
--webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
--moz-box-sizing: border-box;    /* Firefox, other Gecko */
-box-sizing: border-box;	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;	
 }
 
 #main-menu ul#main-menu-list li span.nav-color{
@@ -56,18 +56,65 @@ box-sizing: border-box;
 		background: #ff5aa8;
 	}	
 
-#main-menu ul#main-menu-list li h4{
+#main-menu ul#main-menu-list li h4,#main-menu ul#main-menu-footer li h4{
 	display: table-cell;
 	color: #eee;
 	margin: 0;
 	vertical-align: middle;
 	text-indent: 10px;
 }
+#main-menu ul#main-menu-footer li h4{
+	color: #666 !important;
+}
 
-#main-menu ul#main-menu-list li a{
+#main-menu ul#main-menu-list li a, #main-menu ul#main-menu-footer li a{
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+#main-menu-footer{
+	position: absolute;
+	bottom: 0;
+	list-style: none;
+	width: 100%;
+	margin: 35% 0 0 0;
+	padding: 0;	
+}
+
+#main-menu ul#main-menu-footer li{
+	display: block;
+	width: inherit;
+	padding: 10px 0px 10px 10px;
+	border-bottom: #4d4d4d 1px solid;
+	position: relative;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;	
+}
+
+#main-menu ul#main-menu-footer li span.nav-footer{
+	display: table-cell;
+	width: 20px;
+	height: 20px;
+	background: red;
+	border:solid 0px #000000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin-left: 5%;
+	vertical-align: middle;
+}
+
+#main-menu ul#main-menu-footer li span.nav-footer.profile{
+	width: 21px;
+	height: 22px;
+	background: transparent url(../img/profile-ico.png) no-repeat center center;
+}
+#main-menu ul#main-menu-footer li span.nav-footer.logout{
+	width: 21px;
+	height: 22px;
+	background: transparent url(../img/logout-ico.png) no-repeat center center;
 }
