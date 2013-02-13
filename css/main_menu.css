@@ -1,7 +1,7 @@
 #main-menu{
 	height: inherit;
 	background: #000;
-	width: 25%;
+	width: 35%;
 	position: absolute;
 	z-index: 100;
 	background-image: url(../img/menu_6.png), -webkit-gradient(radial, 165 50%, -27, 220 229, 465, from(#424242), to(#000000));
@@ -25,6 +25,10 @@
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;	
+}
+
+#main-menu ul#main-menu-list li:last-child{
+	border-bottom: none;
 }
 
 #main-menu ul#main-menu-list li span.nav-color{
@@ -93,6 +97,10 @@
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;	
+}
+
+#main-menu ul#main-menu-footer li:last-child{
+	border-bottom: none;
 }
 
 #main-menu ul#main-menu-footer li span.nav-footer{

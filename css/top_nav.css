@@ -31,13 +31,33 @@
 			float: right;
 		}
 
+		#top_nav ul li#right-most a{
+			display: table-cell;
+			width: 23px;
+			height: inherit;			
+		}
 
+		#top_nav ul li#right-most a.watched.off{
+			background: url(../img/seen-off.png) no-repeat center center;						
+		}
+		#top_nav ul li#right-most a.watched.on{
+			background: url(../img/seen-on.png) no-repeat center center;						
+		}
+		#top_nav ul li#right-most a.fav.off{
+			background: url(../img/fav-off.png) no-repeat center center;						
+		}
+		#top_nav ul li#right-most a.fav.on{
+			background: url(../img/fav-on.png) no-repeat center center;						
+		}
 	a#main_menu_trigger{
 		display: block;
 		width: 18px;
 		height: inherit;
 		float: left;
 		background: transparent url(../img/main_menu_off.png) no-repeat center center;
+	}
+	a#main_menu_trigger.back{
+		background: transparent url(../img/back-arrow.png) no-repeat center center !important;	
 	}
 		li#left-most h5{
 			display: table-cell;
@@ -51,6 +71,6 @@
 	a#six_logo{
 		width: 19px;
 		height: inherit;
-		display: block;
+		/*display: block;*/
 		background: transparent url(../img/six_logo.png) no-repeat center center;		
 	}
