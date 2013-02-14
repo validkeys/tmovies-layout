@@ -6,7 +6,10 @@
 	z-index: 100;
 	background-image: url(../img/menu_6.png), -webkit-gradient(radial, 165 50%, -27, 220 229, 465, from(#424242), to(#000000));
 	background-repeat: no-repeat;
-	background-position: center 10px;	
+	background-position: center 10px;
+	-moz-box-shadow:inset -3px 0px 5px #000000;
+	-webkit-box-shadow:inset -3px 0px 5px #000000;
+	box-shadow:inset -3px 0px 5px #000000;		
 }
 
 #main-menu ul#main-menu-list{

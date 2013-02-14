@@ -26,8 +26,11 @@ div#container-wrapper{
 div#display_wrapper{
 	width: 95%;
 	margin: 56px auto 0 auto;
+	height: 100%;
 }
-
+div#content-wrapper{
+	height: inherit;
+}
 div#content-wrapper.nav-out{
 	margin-left: 35%;
 }

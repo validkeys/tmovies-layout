@@ -34,7 +34,8 @@
 		#top_nav ul li#right-most a{
 			display: table-cell;
 			width: 23px;
-			height: inherit;			
+			height: inherit;
+			padding-left: 15%;			
 		}
 
 		#top_nav ul li#right-most a.watched.off{
@@ -49,6 +50,12 @@
 		#top_nav ul li#right-most a.fav.on{
 			background: url(../img/fav-on.png) no-repeat center center;						
 		}
+		#top_nav ul li#right-most a.twitter{
+			background: url(../img/twitter-off.png) no-repeat center center;						
+		}
+		#top_nav ul li#right-most a.facebook{
+			background: url(../img/facebook-off.png) no-repeat center center;						
+		}				
 	a#main_menu_trigger{
 		display: block;
 		width: 18px;
