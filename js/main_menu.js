@@ -8,10 +8,8 @@ $(document).ready(function(){
 		if(open === true){
 			
 			$('#main-menu').addClass('closed');
-			$('#main-menu-list').addClass('closed').delay(5000,function(){
-				// $('#content-wrapper').removeClass('nav-out');
-				alert('here');
-			});
+			$('#main-menu-list').addClass('closed');
+			$('#content-wrapper').removeClass('nav-out');
 
 		} else {
 
