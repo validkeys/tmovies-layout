@@ -1,6 +1,6 @@
 .lineup-outter{
 	width: 100%;
-	height: 100%;
+	height: 94%;
 	overflow: hidden;
 }
 
@@ -59,3 +59,57 @@
 		margin-left: -40%;
 		border-top: #c2c2c2 1px solid;
 	}
+
+		.lineup-cover-sash .sash-footer .author-container{
+			padding: 15px 0 0 0;
+			width: 25%;
+			/*margin: 0 auto;*/
+		}
+
+			.lineup-cover-sash .sash-footer .author-container img{
+				width: 20%;
+				float: left;
+			}
+
+				.lineup-cover-sash .sash-footer .author-container .author-name-container{
+					width: 75%;
+					float: right;
+				}
+
+					.lineup-cover-sash .sash-footer .author-container .author-name-container span.author-name{
+						display: block;
+						font-size: 13px;
+					}
+
+					.lineup-cover-sash .sash-footer .author-container .author-name-container span.created-at{
+						font-size: 11px;
+					}
+	.swipe-sash{
+		position: absolute;
+		bottom: 10%;
+		right: 0;
+		width: 225px;
+		height: 72px;
+		background: url(../img/swipe-sash.png) no-repeat center center;
+	}
+
+		.swipe-sash .swipe-inner{
+			display: table-cell;
+			height: inherit;
+			width: inherit;
+			vertical-align: middle;
+			font-family: 'Fjalla One', sans-serif;
+			color: #424242;
+			text-transform: uppercase;
+			font-size: 17pt;
+			text-align: right;
+			padding-right: 25px;
+		}
+
+			.swipe-sash .swipe-inner span.swipe-hand{
+				display: inline-block;
+				width: 44px;
+				height: 20px;
+				background: url(../img/swipe-hand.png) no-repeat center center;
+				margin-right: 10px;
+			}
