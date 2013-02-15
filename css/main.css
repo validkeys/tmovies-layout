@@ -25,11 +25,20 @@ div#container-wrapper{
 
 div#display_wrapper{
 	width: 95%;
-	margin: 46px auto 0 auto;
+	margin: 44px auto 0px auto;
 	height: 100%;
 }
+
+div#display_wrapper.lineup-listing{
+	margin-top: 55px;
+}
+
 div#content-wrapper{
-	height: inherit;
+	transition: margin .5s;
+	-moz-transition: margin .5s; /* Firefox 4 */
+	-webkit-transition: margin .5s; /* Safari and Chrome */
+	-o-transition: margin .5s; /* Opera */	
+	/*height: 100%;*/
 }
 div#content-wrapper.nav-out{
 	margin-left: 35%;

@@ -18,12 +18,16 @@
 	<link rel="stylesheet" type="text/css" href="css/main_menu.css" />
 
 	<!-- JS -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="js/lineup.view.js"></script>
+	<script type="text/javascript" src="js/main_menu.js"></script>
+
 </head>
 <body>
 
 	<div id="container">
-		<div id="main-menu">
-			<ul id="main-menu-list">
+		<div id="main-menu" class="closed">
+			<ul id="main-menu-list" class="closed">
 				<li>
 					<a href="#"></a>
 					<span class="nav-color purple"></span>
@@ -63,7 +67,9 @@
 				</li>								
 			</ul>
 		</div>
-		<div id="content-wrapper" class="nav-out">
+
+		<!-- Class: nav-out should be added when main menu is exposed -->
+		<div id="content-wrapper">
 
 
 			<!-- NAV -->
@@ -82,7 +88,7 @@
 
 
 			<!-- DISPLAY AREA -->
-			<div id="display_wrapper">
+			<div id="display_wrapper" class="lineup-listing">
 
 				<div class="lineup_listing_wrapper">
 
@@ -97,7 +103,6 @@
 						<!-- Content -->
 						<div class="lli-content-wrapper">
 							<div class="lli-content-inner">
-
 								<div class="lli-content-top">
 									<div class="lli-ct-inner">
 										<div class="author">

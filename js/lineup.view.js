@@ -17,8 +17,8 @@ $(document).ready(function(){
 		nav 	= $('#top_nav');
 
 		nav_height 	= $(nav).outerHeight();
-
-		$(outter).css('height', $('#content-wrapper').height() - nav_height);
+		console.log(nav_height);
+		$(outter).css('height', (window.innerHeight - (nav_height * 2)));
 
 	}
 

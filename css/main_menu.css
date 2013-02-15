@@ -2,7 +2,7 @@
 	height: inherit;
 	background: #000;
 	width: 35%;
-	position: absolute;
+	position: fixed;
 	z-index: 100;
 	background-image: url(../img/menu_6.png), -webkit-gradient(radial, 165 50%, -27, 220 229, 465, from(#424242), to(#000000));
 	background-repeat: no-repeat;
@@ -10,6 +10,11 @@
 	-moz-box-shadow:inset -3px 0px 5px #000000;
 	-webkit-box-shadow:inset -3px 0px 5px #000000;
 	box-shadow:inset -3px 0px 5px #000000;		
+	-webkit-transition: margin .5s;
+}
+
+#main-menu.closed{
+	margin-left: -35%;
 }
 
 #main-menu ul#main-menu-list{
@@ -17,7 +22,15 @@
 	margin: 35% 0 0 0;
 	padding: 0;
 	list-style: none;
+	display: block;
+	opacity: 1;
+	-webkit-transition: all .8s; /* Safari and Chrome */
+	-webkit-transform: scale(1,1);
 }
+	#main-menu ul#main-menu-list.closed{
+		opacity: 0;
+		-webkit-transform: scale(.7,.7); /* Safari and Chrome */
+	}
 
 #main-menu ul#main-menu-list li{
 	display: block;
