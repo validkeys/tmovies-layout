@@ -7,6 +7,7 @@ div.lineup_listing_item{
 	box-shadow: 0px 0px 5px #424242;	
 	margin-bottom: 15px;
 	position: relative;
+	-webkit-transform: translateZ(0);
 }
 
 	a.lli-link{

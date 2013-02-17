@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-	// Resize lineup-outter
-	if($('.lineup-outter').length > 0){
+	// Resize display_wrapper
+	if($('#display_wrapper.lineup-view').length > 0){
 		$(window).resize(function(){
 			size_display_wrapper();
 		});
@@ -13,13 +13,16 @@ $(document).ready(function(){
 	// of the top nav
 	function size_display_wrapper(){
 
-		outter 	= $('.lineup-outter');
+		outter 	= $('#display_wrapper.lineup-view');
 		nav 	= $('#top_nav');
 
 		nav_height 	= $(nav).outerHeight();
-		console.log(nav_height);
-		$(outter).css('height', (window.innerHeight - (nav_height * 2)));
-
+		new_height	= window.innerHeight - nav_height;
+		$(outter).css('height', new_height);
+		$(outter).find('.lineup-page').css('height', new_height);
 	}
+
+	// Setup the swipe on the lineup view
+	window.lineupSwipe = new Swipe(document.getElementById('lineup-swiper'));
 
 });

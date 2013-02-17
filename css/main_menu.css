@@ -11,9 +11,7 @@
 	-webkit-box-shadow:inset -3px 0px 5px #000000;
 	box-shadow:inset -3px 0px 5px #000000;		
 	-webkit-transition: margin .5s;
-	-webkit-transform-style: flat;
-	-webkit-backface-visibility: hidden;
-	-webkit-perspective: 800;	
+	-webkit-transform: translateZ(0);
 }
 
 #main-menu.closed{
@@ -29,6 +27,7 @@
 	opacity: 1;
 	-webkit-transition: all .8s; /* Safari and Chrome */
 	-webkit-transform: scale(1,1);
+	-webkit-transform: translateZ(0);
 }
 	#main-menu ul#main-menu-list.closed{
 		opacity: 0;

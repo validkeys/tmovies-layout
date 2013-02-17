@@ -20,7 +20,9 @@
 
 	<!-- JS -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="js/swipe.min.js"></script>
 	<script type="text/javascript" src="js/lineup.view.js"></script>
+	
 </head>
 <body>
 
@@ -73,7 +75,7 @@
 			<div id="top_nav">
 				<ul>
 					<li id="left-most">
-						<a href="#" id="main_menu_trigger" class="back"></a>
+						<a href="index.html" id="main_menu_trigger" class="back"></a>
 						<h5>Latest Lineups</h5>
 					</li>
 					<li id="right-most">
@@ -89,10 +91,12 @@
 
 
 			<!-- DISPLAY AREA -->
-			<div id="display_wrapper">
+			<div id="display_wrapper" class="lineup-view">
 
-				<div class="lineup-outter">
+				<div class="lineup-outter" id="lineup-swiper">
 					<div class="lineup-inner">
+
+						<!-- COVER PAGE -->
 						<div class="lineup-page cover" style="background-image: url(img/text_lineup_cover.jpg);">
 
 							<!-- SASH -->
@@ -122,8 +126,13 @@
 								</div>
 							</div>
 
-
 						</div>
+						<!-- END COVER PAGE -->
+						<div class="lineup-page inner">
+							<h1>Page 2</h1>
+						</div>
+
+
 					</div>
 				</div>
 
