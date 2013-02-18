@@ -26,11 +26,16 @@
 	width: inherit;
 	background: url(../img/layout-img/frenchstucco.png);
 	position: absolute;
-	top: 40%;
-	margin-top: -20%;
+	bottom: 60%;
+	margin-bottom: -30%;
 	z-index: 100;
 	opacity: .9;
 }
+	.lineup-page.inner .lineup-cover-sash{
+		height: 50%;
+		bottom: 0 !important;
+		margin-bottom: 0px !important;
+	}
 
 	.lineup-cover-sash .lineup-title{
 		width: 70%;
@@ -113,3 +118,116 @@
 				background: url(../img/swipe-hand.png) no-repeat center center;
 				margin-right: 10px;
 			}
+
+.lineup-page.inner .title-nav{
+	padding: 0 20px;
+}
+	.lineup-page.inner .title-nav h1{
+		font-family: 'Fjalla One', sans-serif;
+		font-weight: normal;
+		font-size: 18pt;
+		width: 50%;
+		float: left;
+	}			
+
+	.lineup-page.inner .title-nav ul{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		float: right;
+		width: 45%;
+		height: inherit;
+		padding: 17px;
+	}
+
+		.lineup-page.inner .title-nav ul li{
+			float: right;
+			width: 27px;
+			height: 27px;
+			margin-right: 10px;
+		}
+			.lineup-page.inner .title-nav ul li:first-child{
+				margin-right: 0;
+			}
+		.lineup-page.inner .title-nav ul li a{
+			display: table-cell;
+			height: inherit;
+			width: inherit;
+		}
+			.lineup-page.inner .title-nav ul li a.watch{
+				background: url(../img/watch.png) no-repeat center center;
+			}		
+			.lineup-page.inner .title-nav ul li a.trailer{
+				background: url(../img/trailers.png) no-repeat center center;
+			}
+
+			.lineup-page.inner .title-nav ul li a.share{
+				background: url(../img/share.png) no-repeat center center;
+			}
+
+			.lineup-page.inner .title-nav ul li a.watchlist{
+				background: url(../img/watchlist-off.png) no-repeat center center;
+			}			
+				.lineup-page.inner .title-nav ul li a.watchlist.on{
+					background: url(../img/watchlist-on.png) no-repeat center center;
+				}			
+			.lineup-page.inner .title-nav ul li a.watched{
+				background: url(../img/seen-off.png) no-repeat center center;
+			}
+
+			.lineup-page.inner .title-nav ul li a.fav{
+				background: url(../img/fav-off.png) no-repeat center center;
+			}
+
+div.lineup-inner-details .left{
+	width: 60%;
+	float: left;
+}
+div.lineup-inner-details .right{
+	width: 40%;
+	float: left;
+}
+	div.lineup-inner-details .left p{
+		padding: 20px 40px 20px 20px;
+		line-height: 18pt;
+	}
+
+div.lineup-inner-details .right{
+	padding-top: 2%;
+}
+div.lineup-inner-details .right .features{
+	border-bottom: #c2c2c2 1px solid;
+}
+	.features .feature{
+		padding: 10px 0;
+	}
+
+	.features.ratings{
+		padding: 10px 0;
+	}
+		.features.ratings h5, .features .feature strong{
+			text-transform: uppercase;
+			font-family: 'Fjalla One', sans-serif;
+			color: #666;
+			font-weight: normal;
+		}
+
+		.features .feature strong{
+			margin-right: 20px;
+		}
+	div.lineup-inner-details .right .features .feature.critics{
+		margin-right: 10px;
+	}
+	div.lineup-inner-details .right .features .feature.critics,div.lineup-inner-details .right .features .feature.audience{
+		width: 45%;
+		float: left;
+	} 	
+
+div.features .progress .bar{
+	background-color: #666;
+	background-image: -moz-linear-gradient(top,#666,#666);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#666),to(#666));
+	background-image: -webkit-linear-gradient(top,#666,#666);
+	background-image: -o-linear-gradient(top,#666,#666);
+	background-image: linear-gradient(to bottom,#666,#666);
+}
